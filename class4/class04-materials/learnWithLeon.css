@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Roboto Slab";
+    src: url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap");
+  }
+  
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+     v2.0 | 20110126
+     License: none (public domain)
+  */
+  
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+      display: block;
+  }
+  body {
+      line-height: 1;
+  }
+  ol, ul {
+      list-style: none;
+  }
+  blockquote, q {
+      quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+      content: '';
+      content: none;
+  }
+  table {
+      border-collapse: collapse;
+      border-spacing: 0;
+  }
+  
+  
+  
+  
+  /* my css */
+  html {
+      background: rgb(131, 203, 227);
+  }
+  
+  body {
+      margin: 3%;
+      border: 5px solid rgb(112, 188, 112);
+      font-family: sans-serif;
+  }
+  
+  h1 {
+    margin: 3% auto;
+    padding-top: 2%;
+    font-size: 2.5em;
+    text-align: center; 
+    color: white;
+    font-family: 'Roboto Slab';
+    font-style: italic;
+  }
+  nav ul {
+      width: 15%;
+      margin: 3% auto;
+  }
+  nav ul li {
+      display: inline-block;
+      
+  }
+  
+  
+  h2 {
+      color: white;
+      font-size: 1.5em;
+      margin: 2% 0;
+  }
+  
+  img {
+      width: 25%;
+      float: right;
+      margin: 2.5%;
+  }
+  
+  p {
+      clear: left;
+      color: rgb(243, 242, 242);
+      line-height: 150%;
+      margin-bottom: 5%;
+      font-size: 1.1em;
+  }
+  p,
+  h2 {
+      margin-left: 5%;;
+  }
+  ul li {
+      display: inline;
+  }
+  
+  span {
+      font-weight: 700;
+  }
+  a {
+      color: rgb(62, 204, 62);
+      text-decoration: underline;
+      font-weight: 700;
+  }
+  
+  a:focus {
+      color: white;
+      text-decoration: none
+  }
+  
+  ul {
+      width: 20%;
+      margin: 5% auto;
+  }

@@ -1,0 +1,236 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background-color: rgb(105, 118, 136);
+  padding: 1% 2%;
+}
+
+nav > *{
+  display: inline-block;
+}
+.header-left-a{
+  width: 10%;
+}
+.img-a{
+  width: 60%;
+}
+
+.img-a figure img{
+  display: block;
+  margin: auto;
+  height: 50px;
+}
+.header-right-a{
+  width: 20%;
+}
+header a {
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  color: rgb(241, 241, 241);
+}
+.header-right-a {
+  color: rgb(105, 118, 136)
+}
+.header-right-a span {
+  background-color: white;
+  border-radius: 10%;
+  padding: 4% 6%;
+}
+
+
+/* first section */
+.first-sect {
+  background-color: rgb(105, 118, 136);
+}
+.first-sect h1{
+  font-size: 3rem;
+  color: rgb(241, 241, 241);
+  width: 70%;
+  padding: 7% 0 5% 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.first-sect p{
+  width: 48%;
+  margin: 0 auto;
+  color: rgb(241, 241, 241);
+  font-size: 1.3rem;
+  text-align: center;
+
+}
+
+.service{
+  margin: 0 auto;
+  display: block; 
+  padding: 4% 0;
+}
+
+
+/* second section */
+.second-sect, .fourth-sect {
+  width: 60%;
+  margin: 0 auto;
+}
+
+h2{
+  padding-top: 10%;
+  padding-bottom: 4%;
+  font-size: 2rem;
+  text-align: center;
+}
+.second-sect p, .fourth-sect p{
+  text-align: center;
+  padding-bottom: 5%;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+/* third section */
+.third-sect {
+  background-color: rgb(220, 223, 226);
+  padding: 15% 15%;
+}
+.third-left, .third-right{
+  width: 49%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: center;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.third-sect p, .third-sect h3{
+  width: 90%;
+  margin: 0 auto;
+}
+.third-sect h3{
+  padding: 6% 0;
+}
+.third-sect img{
+  width: 70%;
+  margin: 0 auto;
+}
+.third-sect p{
+  padding-bottom: 12%;
+}
+.third-sect span {
+  border: 1px solid rgb(105, 118, 136);
+  padding: 4% 7%;
+  width: 50%;
+  margin: 0 auto;
+}
+.fourth-sect span{
+  width: 20%;
+  padding: 1%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  text-align: center;
+  border: 1px solid rgb(105, 118, 136);
+}
+
+
+
+
+
+
+/*footer*/
+footer{
+  background-color: rgb(24, 31, 41);
+  padding: 3%;
+}
+
+.footer-left{
+  float: left;
+  width: 40%;
+}
+
+.footer-right{
+  float: right;
+  font-size: .9em;
+}
+.footer-right address{
+  float: right;
+}
+.footer-right .org{
+  color: white;
+  font-weight: bold;
+  
+}
+
+.footer-bottom{
+  clear: both;
+  font-variant: small-caps;
+  color: white;
+  border-top: 1px solid white;
+  padding-top: 1%;
+}
+
+h5{
+  color: rgb(75, 86, 101);
+  margin-bottom: 1%;
+}
+h5~a{
+  color: white;
+  text-decoration: none;
+  font-size: .9em;
+  margin-right: 5%;
+}
+.mini{
+  margin-bottom: 5%;  
+}
+.socials img{
+  height: 50px;
+}
+.socials a {
+  text-decoration: none;
+  color: white;
+}
+.email{
+  color: white;
+}
+.footer-bottom img{
+  height: 40px;
+  text-align: right;
+  position: absolute;
+  right: 4%;
+}
+pre{
+  color: rgb(167, 164, 164);
+}
+.socials img{
+  height: 20px;
+  margin-right: 10px;
+}
