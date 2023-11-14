@@ -25,31 +25,45 @@ body > *{
   padding: 0 5%;
 }
 
+h1{
+  margin-top: 10%;
+  font-size: 4rem;
+  width: 50%;
+}
+
+h2 {
+  font-size: 3rem;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+/* header*/
+header{
+  padding-top: 1%;
+}
 main{
-  background: url("https://images.pexels.com/photos/12940615/pexels-photo-12940615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") 0 0 no-repeat;
+  background: url("https://img.freepik.com/premium-photo/top-view-mangos-with-sliced-green-leaves-wooden-table-with-blank-left-side_35782-166.jpg?w=2000") 0 0 no-repeat;
   background-size: cover;
+  padding-bottom: 2%;
 }
 nav img{
   float: left;
 }
 nav ul{
   float: right;
-  width: 50%;
+  width: 55%;
+  text-align: end;
 }
 nav ul li {
   display: inline;
   margin: 0 2%;
 }
 
-h1{
-  margin-top: 10%;
-  font-size: 4rem;
-  width: 50%;
-}
+/*in the main and below the header */
+
+
+
 main form{
   width: 70%;
   margin: 2% 0;
@@ -81,6 +95,120 @@ form button, form input{
   color: black;
 }
 
+/* first section element, second part on page after the main */
+.about-us{
+  background: url("https://st3.depositphotos.com/29384342/34038/i/1600/depositphotos_340383424-stock-photo-directly-view-table-pink-towel.jpg") 0 0 no-repeat;
+  background-size: cover;
+  padding: 2% 0;
+  padding: 5% 25% 5% 35%;
+}
+.about-us p{
+  margin: 3% 0;
+}
+
+.about-us button{
+  width: 125px;
+  border-radius: 5%;
+  border: none;
+  background: linear-gradient(to right,rgb(255, 166, 0) , rgb(255, 166, 0) 80%, rgb(255, 200, 81) 80%,  rgb(255, 200, 81) 100%);
+  border-radius: 5px;
+  padding: 2% 0;
+}
+
+/*third overall section */
+.order-online{
+  background-color: lightgray;
+}
+.order-online > *{
+  text-align: center;
+}
+.order-online ul {
+  margin: 2% 0;
+}
+.order-online ul li{
+  display: inline;
+  border-bottom: 1px solid black;
+  padding: 1% 1%;
+}
+.order-online ul a {
+  text-decoration: none;
+  color: black;
+}
+.order-online ul a:active{
+  color: orange;
+}
+.order-online ul li:active{
+  border-bottom: 1px solid orange;
+}
+.order-online .section-title{
+  margin: 0 auto;
+}
+.eight-images img{
+  width: 20%;
+  margin: 1% 1%;
+}
+
+/*fourth overall section*/
+.book-table{
+  background-color: rgb(202, 226, 235);
+  padding-bottom: 5%;
+}
+.book-table > *{
+  text-align: center;
+  display: block;
+  margin: 1% 0;
+}
+.book-table .section-title{
+  margin: 0 auto;
+}
+
+.hours{
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+.first-hours{
+  float: left;
+}
+.second-hours{
+  float: right;
+}
+.phone-number{
+  color: orange;
+  font-size: 1.5rem;
+}
+.time{
+  font-weight: bold;
+}
+.book-table img{
+  margin: 0 auto;
+  display: block;
+}
+
+/*fifth overall section */
+.testimonials{
+
+}
+.testimonials > *{
+  text-align: center;
+  display: block;
+  margin: 1% 0;
+}
+.testimonials .section-title{
+  margin: 0 auto;
+}
+
+.testimonials img{
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+.section-title{
+  color: orange;
+  display: block;
+  width: 15%;
+  padding-top: 3%;
+}
