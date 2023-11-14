@@ -21,21 +21,48 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
 
-}
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+header{
+  padding: 1% 3%;
+}
+nav logo{
+  float: left;
+}
+nav ul {
+  display: inline-block;
+  width: 50%;
+  margin: 0 15%;
+}
+nav ul li{
+  float: left;
+  text-align: center;
+  margin-right: 4%;
+}
+nav ul a{
+  text-decoration: none;
+  color: black;
+}
+nav .book{
+  float: right;
+}
+nav img{
+  height: 25px;
+}
+nav .book, nav img, nav ul{
+  vertical-align: middle;
 }
 
-footer {
 
+/*main*/
+main{
+  background: gray url("https://www.zohna.com/wp-content/uploads/dark-blue-hair-1.jpg") 0 0 no-repeat;
 }
+
 
 /******************************************
 /* ADDITIONAL STYLES
