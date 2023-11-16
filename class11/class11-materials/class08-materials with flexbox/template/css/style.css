@@ -22,40 +22,20 @@
 /*******************************************/
 
 body {
-  margin: 0 2vw;
+
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-/* nav,main,aside{
-  float: left;
-  width: 10%;
-}
-main{
-  width: 50%;
-}
-aside{
-  width: 40%;
-} 
- */
-body{
-  display: flex;
+header {
+
 }
 
+footer {
 
-nav ul{
-  display: flex;
-  flex-direction: column;
-  border: 1px solid red;
-  padding: 0;
 }
-
- nav li{
-  list-style-type: none;
- }
-
 
 /******************************************
 /* ADDITIONAL STYLES
