@@ -20,263 +20,78 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-header a {
-  color: white;
-  text-decoration: none;
-}
-header{
-  background: black;
-}
-
-nav{
-}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-/* header area */
-
-header nav {
-  /* width: 100%; */
+nav, ul, main{
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
 }
-header nav > *{
-  /* width: 13.5%; */
-  /* float: left; */
-
+nav, ul {
+  height: 3vh;
 }
-header nav > *{
-  /* float: left; */
-}
-
-header nav ul {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-}
-
-ul li{
-  display: flex;
-  justify-content: center;
-  /* width: 12.5%; */
-  border-right: 1px solid gray;
-  border-left: 1px solid gray;
-  padding: 1%;
-  flex-grow: 1
-}
-
-nav > a{
-  width: 10%;
-  display: flex;
+nav{
   align-items: center;
+}
+
+ul{
+  flex-basis: 60%;
+  justify-content: space-around;
+
+}
+main section{
+  flex-basis: 48%;
+}
+main section + section{
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;  
+}
+
+header{
+  background-color: black;
+}
+nav>a{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid red;
   
 }
-ul li a{
-  /* width: 100%; */
-}
-nav li, nav li a{
-  /* float: left; */
-  /* text-align: center; */
-}
-header > a {
-  /* padding-left: .5rem; */
+
+nav ul a{
+  text-decoration: none;
+  color: white;
+
 
 }
-header ul li a{
-  /* padding: 10px 0; */
+nav ul li{
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  flex-basis: 7.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
 }
-input{
-  width: 90%;
-  height: 2rem;
+nav img{
+  height: 2.5vh;
 }
-header > nav > form{
-  /* padding: 2.5px 0 0 10px;  */
+
+header form{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+header form input::placeholder{
+  color: black;
+  font-weight: bold;
+}
 .logo{
-  border-right: 1px solid gray;
-  width: 5%;
-  padding: 1%
+  border-right: 2px solid gray
 }
-.more{
-  /* width: 11%; */
-}
-
-
-
-
-
-
-
-/*main and bottom section padding*/
-main, .bottom-sect{
-padding: 0 .5rem 0 .5rem;
-}
-
-
-/*first section inside main*/
-
-.welcome, .date{
-  font-size: 1.5em;
-  margin: 3vh 1vh;
-  color: rgb(80, 79, 79);
-}
-.welcome{
-  float: left;
-}
-.date{
-  float: right;
-}
-
-.israel-uae{
-  background: url("https://ichef.bbci.co.uk/news/976/cpsprodpb/1676D/production/_113931029_composite.jpg") no-repeat;
-  background-size: 100%;
-  height: 100%;
-  clear: both;
-  width: 49%;
-  float: left;
-  height: 400px;
-}
-
-.israel-uae h1{
-  padding-top: 40%;
-  padding-left: .5rem;
-  font-size: 1.25rem;
-  margin-bottom: .25rem;
-  color: white;
-  font-size: 2.1rem;
-}
-.israel-uae p{
-  color: white;
-  padding: .5rem 0 1rem .75rem;
-  font-size: 1.2rem;
-}
-.israel-uae span {
-  border-left: 1px solid red;
-  color: white;
-}
-
-/* right section holding 4 smaller sections*/
-.right-sect{
-  float: right;
-  height: 400px;
-  width: 49%;
-  height: 400px;
-}
-
-/*first of four sections in right section*/
-.canada {
-  background: url("https://images.pexels.com/photos/7144459/pexels-photo-7144459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat;
-  background-size: 100%;
-  height: 49%;
-  width: 49%;
-  float: left;
-}
-main section h3{
-  padding-top: 40%;
-  padding-left: .5rem;
-  font-size: 1.25rem;
-  margin-bottom: .25rem;
-  color: white;
-
-}
-section span{
-  color: lightgray;
-  margin-left: .25rem;
-  padding-left: .25rem;
-  padding-left: .5rem;
-}
-.canada span {
-  border-left: 2px solid blue;
-
-}
-.health span{
-  border-left: 2px solid red;
-
-}
- 
-/*bottom left section of right section inside main */
-.worklife {
-  float: left;
-  width: 49%;
-  height: 49%;
-  background: url("https://media.istockphoto.com/id/1208855996/photo/millennial-indian-girl-in-headphones-using-laptop-at-home.jpg?s=612x612&w=0&k=20&c=nPPzgtK-jE0g1hlQkTD3IUHIT7g2g1tqy0SZZJ0EzRc=") no-repeat;
-  background-size: 100%;
-  margin-top: .5rem;
-}
-.worklife span{
-  border-left: 1px solid lightblue;
-}
-/* top right section of the right section inside the main */
-.health {
-  background: url("https://s3.amazonaws.com/medill.wordpress.offload/wp-media-folder-medill-reports-chicago/wp-content/uploads/sites/3/2021/03/50744965182_a581c2d51b_k.jpg") no-repeat;
-  background-size: 100%;
-  height: 49%;
-  width: 49%;
-  float: right;
-}
-
-/* bottom right section of the right section of main */
-.culture {
-  width: 49%;
-  height: 49%;
-  background: url("https://i.guim.co.uk/img/media/c2e2ffa340c62ddaca6428e68ce834e0544d8d4d/0_369_1734_1040/master/1734.jpg?width=620&dpr=2&s=none") no-repeat;
-  background-size: 100%;
-  float: right;
-  margin-top: .5rem;
-}
-
-.canada h3, .health h3, .worklife h3, .culture  h3{
-  width: 90%;
-}
-
-
-
-.right-sect > *{
-  width: 49%;
-  height: 49%;
-  background-size: cover;
-}
-/*bottom section*/
-.bottom-sect{
-  clear: both;
-  height: 400px;
-  margin-top: 8vh;
-}
-.bottom-sect h2{
-  color: rgb(48, 48, 48);
-  font-size: 1.5rem;
-  border-left: 2px solid red;
-  padding-left: .5rem;
-  margin-bottom: 1rem;;
-  
-}
-
-.bottom-sect article{
-  float: left;
-  width: 32.3%;
-  height: 350px;
-  margin-right: 1vw;
-}
-.bottom-sect article img{
-  max-width: 100%;
-}
-.bottom-sect article h3 {
-  font-size: 1.4rem;
-}
-.bottom-sect article p {
-  font-family: 1.1rem;
-}
-.bottom-sect article span {
-  color: rgb(115, 114, 114);
-  border-left: 1px solid red;
-}
-/******************************************
+/********************
 /* ADDITIONAL STYLES
 /*******************************************/
