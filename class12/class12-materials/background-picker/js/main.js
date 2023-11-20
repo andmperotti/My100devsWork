@@ -1,19 +1,23 @@
-document.getElementById('purple').onclick = partyPurple
-document.getElementById('green').onclick = partyGreen
-document.getElementById('blue').onclick = partyBlue
+const purple = document.querySelector("#purple")
+const green = document.querySelector("#green")
+const blue = document.querySelector("#blue")
+
+purple.addEventListener('click', e=>{
+  e.preventDefault;
+  document.querySelector("body").style.backgroundColor = 'purple'
+})
+
+green.addEventListener('click', e=>{
+  e.preventDefault;
+  document.querySelector("body").style.backgroundColor = 'green'
+})
+
+blue.addEventListener('click', e=>{
+  e.preventDefault;
+  document.querySelector("body").style.backgroundColor = 'blue'
+})
 
 
-function partyPurple() {
-  document.querySelector('body').style.backgroundColor = 'rgba(241,63,247,1)'
-  document.querySelector('body').style.color = 'white'
-}
 
-function partyGreen() {
-  document.querySelector('body').style.backgroundColor = 'rgba(0,253,81,1)'
-  document.querySelector('body').style.color = 'white'
-}
 
-function partyBlue() {
-  document.querySelector('body').style.backgroundColor = 'rgba(0,254,255)'
-  document.querySelector('body').style.color = 'white'
-}
+//next use onclick
