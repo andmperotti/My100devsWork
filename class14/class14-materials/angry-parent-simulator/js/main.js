@@ -33,20 +33,37 @@
 
 
 
+// const yell = document.querySelector("#yell")
+
+// const output = document.querySelector("#placeToYell")
+
+// yell.addEventListener("click", yeller)
+
+// function yeller(){
+//   const fName = document.querySelector("#firstName").value 
+//   const fmName = document.querySelector("#firstMiddle").value 
+//   const lmName = document.querySelector("#lastMiddle").value 
+//   const lName = document.querySelector("#lastName").value 
+
+//   output.innerText = `${fName} ${fmName} ${lmName} ${lName} why you little!`
+
+
+
+// }
+
 const yell = document.querySelector("#yell")
 
-const output = document.querySelector("#placeToYell")
+yell.addEventListener("click", click=>{
+  let fName = document.querySelector("#firstName").value 
+  let fMiddle = document.querySelector("#firstMiddle").value 
+  let lMiddle = document.querySelector("#lastMiddle").value 
+  let lName = document.querySelector("#lastName").value 
 
-yell.addEventListener("click", yeller)
-
-function yeller(){
-  const fName = document.querySelector("#firstName").value 
-  const fmName = document.querySelector("#firstMiddle").value 
-  const lmName = document.querySelector("#lastMiddle").value 
-  const lName = document.querySelector("#lastName").value 
-
-  output.innerText = `${fName} ${fmName} ${lmName} ${lName} why you little!`
+  document.querySelector("#placeToYell").innerText = `${fName} ${fMiddle} ${lMiddle} ${lName}`
+  document.querySelector("body").style.backgroundColor = 'gray'
+})
 
 
 
-}
+
+
