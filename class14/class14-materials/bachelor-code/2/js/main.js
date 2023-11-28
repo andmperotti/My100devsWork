@@ -33,34 +33,89 @@
 
 
 
-const andi = document.querySelector("#andiNext")
-const claire = document.querySelector("#claireNext")
-const sharleen = document.querySelector("#sharleenNext")
+// const andi = document.querySelector("#andiNext")
+// const claire = document.querySelector("#claireNext")
+// const sharleen = document.querySelector("#sharleenNext")
 
-const andiImg = document.querySelector("#andi")
-const claireImg = document.querySelector("#claire")
-const sharleenImg = document.querySelector("#sharleen")
+// const andiImg = document.querySelector("#andi")
+// const claireImg = document.querySelector("#claire")
+// const sharleenImg = document.querySelector("#sharleen")
 
 
-andi.addEventListener("click", e=>{
-	andiImg.classList.toggle("hidden")
-	claireImg.classList.add("hidden")
-	sharleenImg.classList.add("hidden")
+// andi.addEventListener("click", e=>{
+// 	andiImg.classList.toggle("hidden")
+// 	claireImg.classList.add("hidden")
+// 	sharleenImg.classList.add("hidden")
+
+// })
+
+// claire.addEventListener("click", e=>{
+// 	document.querySelector("#claire").classList.toggle("hidden")
+// 	document.querySelector("#andi").classList.add("hidden")
+// 	document.querySelector("#sharleen").classList.add("hidden")
+
+// })
+
+
+// sharleen.addEventListener("click", e=>{
+// 	document.querySelector("#sharleen").classList.toggle("hidden")
+// 	document.querySelector("#andi").classList.add("hidden")
+// 	document.querySelector("#claire").classList.add("hidden")
+
+
+// })
+
+
+
+
+
+let claire = document.querySelector("#claire")
+let andi = document.querySelector("#andi")
+let sharleen = document.querySelector("#sharleen")
+
+document.querySelector("#andiNext").addEventListener("click", click=>{
+	andi.classList.toggle("hidden")
+	claire.classList.add("hidden")
+	sharleen.classList.add("hidden")
+
+})
+document.querySelector("#claireNext").addEventListener("click", click=>{
+	claire.classList.toggle("hidden")
+	andi.classList.add("hidden")
+	sharleen.classList.add("hidden")
+
+})
+document.querySelector("#sharleenNext").addEventListener("click", click=>{
+	sharleen.classList.toggle("hidden")
+	claire.classList.add("hidden")
+	andi.classList.add("hidden")
 
 })
 
-claire.addEventListener("click", e=>{
-	document.querySelector("#claire").classList.toggle("hidden")
-	document.querySelector("#andi").classList.add("hidden")
-	document.querySelector("#sharleen").classList.add("hidden")
-
-})
 
 
-sharleen.addEventListener("click", e=>{
-	document.querySelector("#sharleen").classList.toggle("hidden")
-	document.querySelector("#andi").classList.add("hidden")
-	document.querySelector("#claire").classList.add("hidden")
 
 
-})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
