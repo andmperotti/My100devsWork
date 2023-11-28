@@ -85,3 +85,7 @@ contestants.forEach(contestant=>contestant.addEventListener("click", click=>{
 
 
 >>>>>>> 82cdd1153eed0ec06047c5d14c6dd16b854c3616
+
+
+
+
