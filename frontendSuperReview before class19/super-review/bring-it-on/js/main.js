@@ -14,7 +14,7 @@ function subtractQuatro(a,b,c,d){
 subtractQuatro(1,2,3,4)
 // Create a function that divides one number by another and returns the remainder
 function divisio(a,b){
-    return a/b
+    return a%b
 }
 console.log(divisio(2,1))
 // *Conditionals*
