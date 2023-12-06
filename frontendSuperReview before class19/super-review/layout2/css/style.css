@@ -20,9 +20,23 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
-body {
-
+header, footer{
+  height: 100px;
+}
+section section, main{
+  height: 200px
+}
+body > section{
+  display: flex;
+}
+header, footer, section section, main{
+  border: 1px solid black;
+}
+.first{
+  flex: 1;
+}
+.second{
+  flex: 2;
 }
 
 

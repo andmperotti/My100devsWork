@@ -20,11 +20,24 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
-body {
-
+header, footer{
+  height: 100px;
 }
-
+section{
+  height: 500px;
+}
+header, footer, section{
+  border: 1px solid black;
+}
+main{
+  display: flex;
+}
+section{
+  flex: 1;
+}
+.biggest{
+  flex: 2;
+}
 
 /******************************************
 /* LAYOUT

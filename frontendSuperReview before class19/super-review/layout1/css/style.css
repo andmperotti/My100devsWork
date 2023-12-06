@@ -20,7 +20,8 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-header, footer{
+/*floats with clear property*/
+/* header, footer{
   border: 1px solid black;
   height: 100px;
   clear: both;
@@ -39,8 +40,47 @@ section{
 .bottom{
   float: left;
   width: 50%;
+} */
+
+/* floats with clearfix class*/
+/* header,footer, section{
+  border: 1px solid black;
+}
+header,footer{
+  height: 100px
 }
 
+section:not(.bottom){
+  height: 200px;
+  float: left;
+
+}
+main>section{
+  width: 33%;
+  float: left;
+
+}
+
+.bottom > section{
+  width: 50%;
+} */
+
+
+/*flex*/
+header, footer, section:not(.bottom){
+  border: 1px solid black;
+
+}
+header, footer{
+  height: 100px;
+}
+main,.bottom{
+  display: flex;
+}
+section:not(.bottom){
+  height: 200px;
+  flex: 1;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
