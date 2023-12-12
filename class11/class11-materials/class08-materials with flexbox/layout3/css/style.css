@@ -1,0 +1,167 @@
+
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  margin: 0 2vw;
+}
+body > *{
+  float: left;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header, nav, main, .right-sect{
+  height: 70vh;
+
+}
+header {
+  width: 13%;
+}
+header nav{
+  margin-top: 2vh;
+}
+header nav > *{
+  display: block;
+  margin: 1vh 0;
+}
+
+header nav img{
+  width: 50%;
+  display: block;
+}
+
+
+
+header nav a , header nav ul li a, nav form input::placeholder{
+  color: rgb(162, 162, 162);
+  text-decoration: none;
+  font-family: 'Noto Sans Kawi', sans-serif;
+  font-size: 1.2rem;
+}
+header nav ul li {
+  margin: 1.5vh 0;
+}
+header nav a.join{
+  text-decoration: none;
+  color: orange;
+}
+
+header nav form input {
+  width: 100%;
+  border: none;
+  height: 2rem;
+  margin-top: 1.5vh;
+}
+
+span {
+  display: block;
+  font-size: .8rem;
+  margin: .8vh 0;
+}
+
+
+main{
+  margin-left: 1%;
+  margin-top: 1%;
+  width: 53.5%;
+  float: left;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+main article h1{
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 1vh 0;
+  color: black;
+}
+main article p{
+  font-size: 1.1rem;
+  color: rgb(162, 162, 162);
+}
+
+main article img{
+  max-width: 100%;
+}
+
+.right-sect{
+  width: 27%;
+  margin-left: 4%;
+}
+.right-sect section {
+  margin-top: 1vh;
+
+}
+
+h2{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.right-sect a{
+  color: black;
+  text-decoration: none;
+}
+.right-sect a:hover{
+  color: gray;
+}
+
+.bottom-sect{
+  margin: 2vh 0 0 14%;
+}
+
+.bottom-sect h3 {
+  font-weight: bold;
+  border-bottom: 1px solid rgb(212, 212, 212);
+  padding-bottom: 2vh;
+}
+
+.bottom-sect article > *{
+  float: left;
+  width: 33.33%;
+}
+.bottom-sect article {
+  margin-top: 2vh;
+}
+
+.bottom-sect article p, .bottom-sect article time {
+  color: rgb(162, 162, 162)
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.join{
+  font-weight: bold;
+}
+.extra{
+  color: rgb(252, 203, 111);
+  font-weight: bold;
+}
+
+.sect-border{
+  border-bottom: 1px solid rgb(212, 212, 212);
+}

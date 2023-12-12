@@ -1,0 +1,11 @@
+h2{
+    color: rgb(150 0 0 );
+}
+/*all h2's in section to be blue, all other h2's to stay red*/
+section > h2{
+    color: rgb(0 0 150);
+}
+
+section + article > h2{
+    color: rgb(100 0 100);
+}
