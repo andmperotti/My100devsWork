@@ -279,4 +279,173 @@ console.log(usersToSort[2].name); // Pete
 
 console.log('') //to separate lines from this and the next task
 
-a
+/*
+Shuffle an array
+importance: 3
+Write the function shuffle(array) that shuffles (randomly reorders) elements of the array.
+
+Multiple runs of shuffle may lead to different orders of elements. For instance:
+
+let arr = [1, 2, 3];
+
+shuffle(arr);
+// arr = [3, 2, 1]
+
+shuffle(arr);
+// arr = [2, 1, 3]
+
+shuffle(arr);
+// arr = [3, 1, 2]
+// ...
+All element orders should have an equal probability. For instance, [1,2,3] can be reordered as [1,2,3] or [1,3,2] or [3,1,2] etc, with equal probability of each case.
+*/
+
+function shuffle(array){
+	let results = [[1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,2,1], [3,1,2]]
+	console.log(results[Math.floor(Math.random()*6)])
+}
+let numsArr = [1, 2, 3];
+
+shuffle(numsArr);
+// arr = [3, 2, 1]
+
+shuffle(numsArr);
+// arr = [2, 1, 3]
+
+shuffle(numsArr);
+// arr = [3, 1, 2]
+// ...
+
+//So this one is very hard and after reading their "solution" I'm even more confused, so that's great.
+//What I tried to do was create a list of possible outcomes of shuffling the elements in the array and then pull a random one using Math.random and rounding it down to be zero indexed using Math.floor()
+
+
+console.log('') //to separate lines from this and the next task
+
+
+/*
+Get average age
+importance: 4
+Write the function getAverageAge(users) that gets an array of objects with property age and returns the average age.
+
+The formula for the average is (age1 + age2 + ... + ageN) / N.
+
+For instance:
+
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 29 };
+
+let arr = [ john, pete, mary ];
+
+alert( getAverageAge(arr) ); // (25 + 30 + 29) / 3 = 28
+*/
+
+// function getAverageAge(users){
+// 	let totalAges = 0;
+// 	users.forEach(ele=>totalAges+=ele.age)
+// 	return totalAges/users.length
+// }
+
+function getAverageAge(users){
+	return users.reduce((prev, user)=>prev+user.age, 0) /users.length
+}
+
+let johnAge = { name: "John", age: 25 };
+let peteAge = { name: "Pete", age: 30 };
+let maryAge = { name: "Mary", age: 29 };
+
+let arrAge = [ johnAge, peteAge, maryAge ];
+
+console.log( getAverageAge(arrAge) ); // (25 + 30 + 29) / 3 = 28
+
+//I see now that in the solutions I could have used a reduce method to calculate the total and return that total divided by users .length, i'm going to try to not look at that code and write my own above.
+//I forgot to add the age property/key the first call
+
+
+console.log('') //to separate lines from this and the next task
+
+
+/*
+Filter unique array members
+importance: 4
+Let arr be an array.
+
+Create a function unique(arr) that should return an array with unique items of arr.
+
+For instance:
+
+function unique(arr) {
+  /* your code 
+}
+
+let strings = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
+
+alert( unique(strings) ); // Hare, Krishna, :-O
+*/
+
+
+function unique(arr){
+	return arr.filter((ele,i)=>!arr.slice(0,i).includes(ele))
+}
+let strings = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"];
+
+console.log(unique(strings))
+
+//my code is actually shorter than their solution and has the same result. My program uses the filter method to iterate through each element and checks to see if that element doesn't exist in the array span before and including its index.
+//I did mess up the first time and wrote it without the not operator and then tried it with it, as in the first time I eliminated non repeated elements
+
+console.log('') //to separate lines from this and the next task
+
+/*
+Create keyed object from array
+importance: 4
+Let’s say we received an array of users in the form {id:..., name:..., age:... }.
+
+Create a function groupById(arr) that creates an object from it, with id as the key, and array items as values.
+
+For example:
+
+let users = [
+  {id: 'john', name: "John Smith", age: 20},
+  {id: 'ann', name: "Ann Smith", age: 24},
+  {id: 'pete', name: "Pete Peterson", age: 31},
+];
+
+let usersById = groupById(users);
+
+/*
+// after the call we should have:
+
+usersById = {
+  john: {id: 'john', name: "John Smith", age: 20},
+  ann: {id: 'ann', name: "Ann Smith", age: 24},
+  pete: {id: 'pete', name: "Pete Peterson", age: 31},
+}
+
+Such function is really handy when working with server data.
+
+In this task we assume that id is unique. There may be no two array items with the same id.
+
+Please use array .reduce method in the solution.
+*/
+
+function groupById(arr){
+	return arr.reduce((acc, ele)=>{
+		acc[ele.id] = ele;
+		return acc
+	},{})
+}
+let usersToGroup = [
+  {id: 'john', name: "John Smith", age: 20},
+  {id: 'ann', name: "Ann Smith", age: 24},
+  {id: 'pete', name: "Pete Peterson", age: 31},
+];
+let usersById = groupById(usersToGroup)
+console.log(usersById)
+
+//I've actually done this one before as well and have been practicing it but still had some problems; I forgot to return the accumulating object during each iteration.
+//It will stay in my anki
