@@ -1,0 +1,332 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+  padding: 1% 3%;
+}
+
+nav > *{
+  line-height: 1.5rem;
+}
+nav logo{
+  float: left;
+}
+nav ul {
+  display: inline-block;
+  max-width: 80%;
+  width: 100%;
+  margin-left: .5vw;
+}
+nav ul li{
+  float: left;
+  text-align: center;
+  list-style-type: none;
+  width: 12.5%;
+}
+nav ul a{
+  text-decoration: none;
+  color: black;
+}
+nav .book{
+  float: right;
+}
+nav img{
+  height: 25px;
+}
+nav .book, nav img, nav ul{
+  vertical-align: middle;
+}
+
+
+/*main*/
+main{
+  background: gray url("https://www.zohna.com/wp-content/uploads/dark-blue-hair-1.jpg") 0 0 no-repeat;
+  background-size: cover;
+  padding: 10% 2% 0 8%;
+}
+main h1{
+  font-size: 5rem;
+  color: white;
+  width: 50%;
+  margin-bottom: 1%;
+}
+.quote{
+  color: white;
+  font-size: .9rem;
+  width: 50%;
+}
+
+.black-button{
+  background-color: black;
+  color: white;
+  padding: 1%;
+  display: block;
+}
+main .black-button {
+  margin-top: 1%;
+  margin-bottom: 5%;
+  border: none;
+
+}
+.ad{
+  background: black;
+  color: white;
+  display: block;
+  width: 25%;
+  padding: 1% 0;
+}
+.ad .question{
+  display: block;
+  border-left: 3px solid white;
+  padding: 10% 5%;
+  font-size: .9rem;
+}
+
+.ad .offer{
+  font-size: 1rem;
+  padding: 1% 6%;
+  display: block;
+}
+.ad .offer strong{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.ad button{
+  display: block;
+  margin: 5%;
+  padding: 3%;
+}
+
+.quote.sideways{
+  float: right;
+  writing-mode: vertical-rl;
+}
+.small-buttons{
+  float: right;
+  width: 15%;
+  margin: 3%
+}
+.small-buttons a{
+  background: white;
+  border-radius: 50%;
+  padding: 10%;
+}
+
+
+
+
+
+
+.services{
+  width: 90%;
+  padding: 5% 15%;
+  margin: 0 auto;
+  
+}
+.services > *{
+  float: left;
+  width: 31%;
+  margin-right: 2%;
+  text-align: center;
+}
+.services > section span{
+  font-weight: bold;
+  margin: 5% 0;
+  display: block;
+}
+.services > section p{
+  font-size: .8rem;
+}
+.services > section img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+.salon{
+  background: rgb(243, 244, 246);
+  padding: 3% 0;
+}
+.momentum{
+  float: left;
+  margin-left: 12%;
+  display: inline-block;
+  width: 40%
+}
+h2{
+  font-size: 2rem;
+}
+.momentum h2{
+  margin-bottom: 2%;;
+}
+.momentum button{
+  background-color: black;
+  color: white;
+  padding: 2% 2%;
+  border: none;
+  margin-top: 2%;
+}
+.right-img {
+  float: right;
+  margin-right: 12%;
+  display: inline-block;
+}
+
+
+
+.employees{
+  width: 70%;
+  margin: 6% auto;
+  text-align: center
+}
+.employees > section{
+  float: left;
+  background-color: black;
+  color: white;
+  max-width: 30%;
+}
+.second-kitty{
+  margin: 0 2%;
+}
+
+.employees > section img{
+  max-width: 100%;
+}
+.employees h5{
+  margin-bottom: 4%;
+  margin-top: 5%;
+}
+.employees span{
+  display: inline-block;
+  margin-bottom: 5%;
+}
+
+
+
+
+
+.sale{
+  background: gray url("https://i.ibb.co/vH1Fs1L/Photo-on-11-14-23-at-10-31-AM.jpg")no-repeat;
+  padding: 4% 2%;
+  margin: 0 15%;
+  background-size: 175%;
+  background-position: 90% 10%;
+}
+.sale span{
+  color: black;
+  display: block;
+  margin: 2% 0;
+  width: 21%;
+  line-height: 1.5rem;
+}
+.sale strong{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.sale button{
+  background: black;
+  color: white;
+  border: none;
+  padding: 1%;
+}
+
+
+
+
+
+.lookbook{
+  margin: 0 15%;
+}
+.lookbook h2{
+  padding-top: 4%;
+  text-align: center;
+}
+.lookbook span {
+  display: block;
+  margin: 0 auto;
+  font-size: 5rem;
+  width: 5%;
+}
+.lookbook img{
+  width: 30%;
+  margin: 1%;
+  float: left;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+@media all and (max-width: 1050px){rw
+  nav ul, nav a{
+    display: none;
+  }
+  nav img {
+    display: block;
+    margin: 0 auto;
+  }
+  main{
+  background-size: cover;
+  }
+  main .quote{
+    max-width: 50% !important;
+  }
+  main .ad{
+    max-width: 25%;
+  }
+  .services {
+    width: 90%;
+  }
+  .services > *{
+    width: 100%;
+  }
+
+
+  .salon > *, .salon>* *{
+    max-width: 90%;
+    float: none;
+    margin: 2% auto;
+    display: block;
+  }
+  .salon > * p, .salon h2{
+    text-align: center;
+  }
+  .salon button{
+    margin: 0 auto;
+    display: block;
+  }
+  .salon img{
+    width: 70%;
+    margin-top: 1%;
+  }
+}

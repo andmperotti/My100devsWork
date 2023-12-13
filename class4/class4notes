@@ -1,0 +1,101 @@
+class4 100devs
+
+
+If you're reading a resource on code, you should be _ while reading
+
+
+coding!
+build things using what you're learning
+
+
+go deep not wide:
+
+
+don't spend too much time on things that aren't specifically assigned, go deep on things assigned and not hitting hella other things not specifically assigned
+
+
+
+
+There's only one time you can use inline styles:
+
+
+email styling;
+they don't have access to external stylesheets, yet
+
+
+
+
+Css needed to load styles above the scrolled area of a page. Used by Amazon
+
+
+critical path css
+
+
+This element lets us tell our html file where to find our css file?
+
+
+link
+rel="stylesheet"
+
+
+This area contains the declerations of property values in a css rule?
+
+
+decleration block
+
+
+
+What is written above is overwritten below, refers to what?
+
+the cascade
+
+
+If using 2 link elements, one for a font, and one for a css file, which should come first?
+
+the font, css needs it loaded first before it can use it
+
+
+Leon said that developers stopped using this when css3 was introduced?
+
+long-hand properties;
+background vs using background-color just to apply a color,
+border shorthand didn't exist and you would have had to use width style and color longhand properties
+
+
+
+This symbol is used to select a direct descendent of another element; aka direct parent child relationship selector. Can pick multiple of the same element that are direct children of a specific element.
+
+
+>
+
+
+This is the parent child relationship selector, not direct; to select an element that is an ancestor of another element, eventual not direct.
+
+
+space
+
+
+This allows us to select a direct sibling relationship between 2 elements to style an element?
+
++;
+if we had:
+section
+	p
+	p
+p+p = Only the second p would be selected, the second p was directly a sibling of the first p, the first p did not have a p above it in the code.
+
+
+How many points of specificity do you get for inline style or !important?
+
+
+1000
+1-0-0-0
+
+
+If you need to use !important, which you should only in critical situations, where in a decleration do you place it?
+
+
+after values to a property and before closing the decleration :
+color: red !important;
+
+
