@@ -17,7 +17,7 @@ doThis(2,2,2)
 
 // Create a function that takes in 1 number. Console log the cube root of the number. Call the function.
 function doThat(a){
-    console.log(Math.cbrt(a))
+    console.log(Math.cbrt(a).toFixed(4))
 }
 doThat(2)
 // *Conditionals*
@@ -36,7 +36,7 @@ doSquat('july')
 //Create a function that takes in a number. Console log every number from 1 to that number while skipping multiples of 5.
 function loopNum(num){
     for(let i = 0; i<=num; i++){
-        if(!(i%5==0)){
+        if(i%5 !== 0){
             console.log(i)
         }
     }
