@@ -45,7 +45,8 @@ const server = http.createServer((req, res) => {
         const objToJson = {
           name: "leon",
           status: "Boss Man",
-          currentOccupation: "Baller"
+          currentOccupation: "Baller",
+          flipResult : Math.ceil(Math.random()*2)>1? "Tails":"Heads"
         }
         res.end(JSON.stringify(objToJson));
       }//student = leon
@@ -60,11 +61,13 @@ const server = http.createServer((req, res) => {
       }//student != leon
     }//student if
   }//else if, as in not api or any above endpoints:
+  //this would seem as if a user is asking for your css reply with it, but after creating my own server I ran into a problem with the css not loading even though I imported it in the index.html via a <link>, this below did load it into the dom
   else if (page == '/css/style.css'){
     fs.readFile('css/style.css', function(err, data) {
       res.write(data);
       res.end();
     });
+    //again you'd thing this would give the javascript file to a user if the user requests it but no this is how the server loads the js file into the dom, not the <script> at the end of the body element of my index.html file
   }else if (page == '/js/main.js'){
     fs.readFile('js/main.js', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/javascript'});
