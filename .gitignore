@@ -1,4 +1,4 @@
 *.DS_Store
 *.pages
-nodes_modules/*
+nodes_modules
 package-lock.json
