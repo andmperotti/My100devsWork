@@ -87,7 +87,7 @@ const server = http.createServer((req, res) => {
   }
 });
 //run this server on port 8000 aka localhost:8000
-server.listen(8000);
+server.listen(8001);
 
 //"page and params are deprecated now"-leon
 //page used pathname to find the endpoint
