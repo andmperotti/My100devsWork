@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Todo List: </h1>
+    <ul class="todoItems">
+        <!--this ejs sets up a for loop, it iterates as many times as there are objects in our collections, making a list item for each-->
+    <% for(let i=0; i < items.length; i++) {%>
+        <li class="item">
+            <!-- creates a list item for each object in the array 'items' which was declared in the server.js file-->
+            <% if(items[i].completed === true) {%>
+                <!--if an element in the array has a true value to its completed property then it gets a span added to it containing the object.thing value, with a class of completed-->
+                <span class='completed'><%= items[i].thing %></span>
+            <% }else{ %>
+                <!--if not completed then it's added without the class value -->
+                <span><%= items[i].thing %></span>
+            <% } %>    
+            <!--here we add another span that has 2 class values, this is for font awesome and will load a trash can icon-->
+            <span class='fa fa-trash'></span>
+        </li>
+        <!--this closes the for loop-->
+    <% } %>
+    </ul>
+
+    <h2>Left to do: <%= left %></h2>
+
+    <h2>Add A Todo:</h2>
+
+    <form action="/addTodo" method="POST">
+        <!--user input data here will be accessible in server.js using request.body.todoItem which is the value from the input element's name attribute, and this would be used inside an app.post('/addTodo') which was the forms action attribute value and method attribute value-->
+        <input type="text" placeholder="Thing To Do" name="todoItem">
+        <input type="submit">
+    </form>
+    
+
+    <script src='js/main.js'></script>
+</body>
+</html>
