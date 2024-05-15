@@ -16,3 +16,5 @@ const connectDB = async () => {
 }
 
 module.exports = connectDB
+
+//this variable (connectDB) is used to connect to the database
